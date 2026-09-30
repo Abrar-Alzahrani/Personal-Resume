@@ -29,7 +29,9 @@ header {
 nav {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 nav a {
@@ -61,12 +63,6 @@ nav a:hover {
 
 .about-text {
     flex: 1;
-}
-
-.hello {
-    color: #7868a6;
-    font-size: 20px;
-    font-weight: bold;
 }
 
 .about-text h1 {
@@ -148,7 +144,47 @@ nav a:hover {
 }
 
 
-/* Certificates */
+/* Bootstrap Project Buttons */
+
+.card .btn-primary {
+    background-color: #7868a6;
+    border-color: #7868a6;
+    color: white;
+
+    margin-top: 15px;
+}
+
+.card .btn-primary:hover {
+    background-color: #5f5189;
+    border-color: #5f5189;
+    color: white;
+}
+
+
+/* Bootstrap Modal */
+
+.modal-title {
+    color: #7868a6;
+}
+
+.modal-body strong {
+    color: #252238;
+}
+
+.modal-footer .btn-secondary {
+    background-color: #7868a6;
+    border-color: #7868a6;
+    color: white;
+}
+
+.modal-footer .btn-secondary:hover {
+    background-color: #5f5189;
+    border-color: #5f5189;
+    color: white;
+}
+
+
+/* Certificates, Courses & Awards */
 
 .card ul {
     padding-left: 25px;
@@ -201,6 +237,10 @@ footer {
 
 @media (max-width: 992px) {
 
+    nav {
+        gap: 12px;
+    }
+
     .about-section {
         padding: 60px 8%;
     }
@@ -245,6 +285,18 @@ footer {
 
 
 @media (max-width: 576px) {
+
+    header {
+        padding: 15px;
+    }
+
+    nav {
+        gap: 5px;
+    }
+
+    nav a {
+        padding: 6px 8px;
+    }
 
     .about-section {
         padding: 40px 6%;
